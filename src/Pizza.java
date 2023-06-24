@@ -30,5 +30,8 @@ public class Pizza {
         System.out.println("ToGo is opted");
         this.price +=extraBagPrice;
     }
-
+    // get total bill
+    public void getBill(){
+        System.out.println("Your total is: " + this.price);
+    }
 }
