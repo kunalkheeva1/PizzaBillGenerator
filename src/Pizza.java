@@ -25,19 +25,16 @@ public class Pizza {
     //add extra cheese method
     public void addExtraCheese(){
         isCheeseAdded = true;
-        System.out.println("Extra Cheese Added");
         this.price +=extraCheesePrice;
     }
     //add extra topping method
     public void addExtraTopping(){
         noOfToppingsAdded +=1;
-        System.out.println("Extra Topping Added");
         this.price += extraToppingPrice;
     }
     // take out or not? if take out then add the bag price in total
     public void toGo(){
         isToGo = true;
-        System.out.println("ToGo is opted");
         this.price +=extraBagPrice;
     }
     // get total bill

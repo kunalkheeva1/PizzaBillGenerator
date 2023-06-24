@@ -7,7 +7,7 @@ public class Main {
         pizza.addExtraTopping();
         pizza.addExtraTopping();
         pizza.toGo();
-
+        pizza.getBill();
 
     }
 }
