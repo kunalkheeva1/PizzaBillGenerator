@@ -8,10 +8,10 @@ public class Pizza {
     public Pizza(boolean veg) {
         this.veg = veg;
         if(this.veg) {
-            this.price = 300;
+            this.price = 15;
         }
         else {
-            this.price = 400;
+            this.price = 20;
         }
     }
 
@@ -31,7 +31,7 @@ public class Pizza {
         this.price +=extraBagPrice;
     }
     // get total bill
-    public void getBill(){
-        System.out.println("Your total is: " + this.price);
+    public int getBill(){
+       return this.price;
     }
 }
