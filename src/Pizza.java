@@ -20,6 +20,11 @@ public class Pizza {
         System.out.println("Extra Cheese Added");
         this.price +=extraCheesePrice;
     }
+    //add extra topping method
+    public void addExtraTopping(){
+        System.out.println("Extra Topping Added");
+        this.price += extraToppingPrice;
+    }
 
 
 }
