@@ -25,6 +25,10 @@ public class Pizza {
         System.out.println("Extra Topping Added");
         this.price += extraToppingPrice;
     }
-
+    // take out or not? if take out then add the bag price in total
+    public void toGo(){
+        System.out.println("ToGo is opted");
+        this.price +=extraBagPrice;
+    }
 
 }
