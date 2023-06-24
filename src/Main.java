@@ -3,6 +3,8 @@ public class Main {
 
         Pizza pizza = new Pizza(true);
         pizza.addExtraCheese();
+        pizza.addExtraCheese();
+        pizza.addExtraTopping();
         pizza.addExtraTopping();
         pizza.addExtraTopping();
         pizza.addExtraTopping();
