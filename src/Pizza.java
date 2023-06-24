@@ -7,7 +7,7 @@ public class Pizza {
     private int basePizzaPrice =0;
 
     //confirmations for the final bill
-    private boolean isCheeseAdded = false;
+    private int isCheeseAdded = 0;
     private int noOfToppingsAdded =0;
     private boolean isToGo =false;
 
@@ -24,7 +24,7 @@ public class Pizza {
 
     //add extra cheese method
     public void addExtraCheese(){
-        isCheeseAdded = true;
+        isCheeseAdded += 1;
         this.price +=extraCheesePrice;
     }
     //add extra topping method
@@ -40,11 +40,11 @@ public class Pizza {
     // get total bill
     public void getBill(){
         System.out.println("Base Price of Pizza: " + basePizzaPrice);
-        if(isCheeseAdded){
-            System.out.println("Extra Cheese Added" + extraCheesePrice);
+        if(isCheeseAdded >0){
+            System.out.println(extraCheesePrice + " Extra Cheese Added \n Price Addition: " + extraCheesePrice * extraCheesePrice);
         }
         if(noOfToppingsAdded >0){
-            System.out.println( noOfToppingsAdded + "Number of Toppings added, Price addition = " + noOfToppingsAdded*extraToppingPrice);
+            System.out.println( noOfToppingsAdded + " Number of Toppings added \n Price addition = " + noOfToppingsAdded * extraToppingPrice);
         }
         if(isToGo) {
             System.out.println("Price of Extra Bag: " + extraBagPrice);
