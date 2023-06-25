@@ -11,6 +11,8 @@ public class Main {
 //        pizza.toGo();
 //        pizza.getBill();
         DeluxPizza dp = new DeluxPizza(true);
+        dp.addExtraCheese();
+        dp.addExtraTopping();
         dp.getBill();
 
 
